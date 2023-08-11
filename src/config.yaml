@@ -1,0 +1,8 @@
+binary: /usr/local/cloudflared
+tunnels:
+- id: 6d17a91d-fb45-4d68-979c-277dcdb4ea6b
+  credential-file: /etc/cloudflared/creds/0.json
+  lb-pool: 568cd9d777725b313c6e72970ce85cc6
+- id: 82401064-f818-4842-832e-2b6fae021019
+  keyfile: /etc/cloudflared/creds/0.json
+  lb-pool: 568cd9d777725b313c6e72970ce85cc6
