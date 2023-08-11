@@ -131,11 +131,11 @@ func GetReplicationSet() string {
 
 func GetIndex(podlist []string, hostname *string, path *string) (int, error) {
 
-	files, err := filepath.Glob("config-*.yaml")
+	files, _ := filepath.Glob(*path + "config-*.yaml")
 
 	error := IndexError{}
 
-	if len(files) < len(podlist) || err != nil {
+	if len(files) < len(podlist) {
 		return 0, error
 	}
 

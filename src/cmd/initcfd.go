@@ -70,7 +70,7 @@ func GetConfig() *ConfigT {
 		session:    *ocp4cli.Session(),
 		namespace:  ocp4cli.GetNamespace(),
 		replicaSet: ocp4cli.GetReplicationSet(),
-		path:       "/etc/cloudflared/config",
+		path:       "/etc/cloudflared/config/",
 	}
 
 	if config.namespace == "" {
